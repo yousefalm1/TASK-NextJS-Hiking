@@ -1,9 +1,10 @@
-import React from "react";
-import tripsData from "../data/TripsData";
 import Image from "next/image";
 
+import trips from "../data/trips";
+
 function TripDetail() {
-  const trip = tripsData[0];
+  const trip = trips[0];
+
   return (
     <div className="max-w-5xl mx-auto border-gray-300 border-2 rounded-md mb-4">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -26,7 +27,7 @@ function TripDetail() {
                   height={500}
                   className="w-full h-auto rounded mb-4"
                   src={trip.img}
-                  alt="..."
+                  alt={trip.name}
                 />
                 <p className="mb-4 text-gray-700">
                   City: {trip.city}

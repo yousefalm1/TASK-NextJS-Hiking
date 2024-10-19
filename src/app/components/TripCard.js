@@ -1,7 +1,6 @@
 import Image from "next/image";
-import React from "react";
 
-function TripItem({ trip }) {
+function TripCard({ trip }) {
   return (
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-4 mb-8">
       <div className="mx-auto cursor-pointer relative overflow-hidden rounded-lg aspect-square">
@@ -15,11 +14,11 @@ function TripItem({ trip }) {
           height={800}
           className="w-full h-full object-cover"
           src={trip.img}
-          alt="..."
+          alt={trip.name}
         />
       </div>
     </div>
   );
 }
 
-export default TripItem;
+export default TripCard;

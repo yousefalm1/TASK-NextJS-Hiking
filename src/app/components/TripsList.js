@@ -1,14 +1,15 @@
 "use client";
-import React, { useState } from "react";
+
+import trips from "../data/trips";
 import SearchBar from "./SearchBar";
-import TripItem from "./TripsItem";
-import tripsData from "../data/TripsData";
+import TripCard from "./TripCard";
 
 function TripsList() {
   const [query, setQuery] = useState("");
-  const trips = tripsData
+  const tripCards = trips
     .filter((trip) => trip.name.toLowerCase().includes(query.toLowerCase()))
-    .map((trip, index) => <TripItem trip={trip} key={index} />);
+    .map((trip, index) => <TripCard trip={trip} key={index} />);
+
   return (
     <section className="py-24 bg-white" id="portfolio">
       <div className="container mx-auto px-4">
@@ -35,9 +36,8 @@ function TripsList() {
           </div>
           <div className="w-[10%] h-1 rounded bg-secondary"></div>
         </div>
-
         <div className="flex flex-wrap mx-4 justify-center items-center">
-          {trips}
+          {tripCards}
         </div>
       </div>
     </section>

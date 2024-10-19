@@ -1,5 +1,3 @@
-import React from "react";
-
 function Welcome() {
   return (
     <div className="bg-primary text-white text-center py-16">
