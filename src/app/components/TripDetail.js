@@ -1,6 +1,5 @@
+import trips from "@/data/trips";
 import Image from "next/image";
-
-import trips from "../data/trips";
 
 function TripDetail() {
   const trip = trips[0];

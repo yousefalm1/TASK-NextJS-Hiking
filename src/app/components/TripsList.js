@@ -1,6 +1,7 @@
 "use client";
 
-import trips from "../data/trips";
+import trips from "@/data/trips";
+
 import SearchBar from "./SearchBar";
 import TripCard from "./TripCard";
 
