@@ -11,7 +11,7 @@ function NavLink({ href }) {
 
   return (
     // Complete this component so that it changes style when the link is "active"
-    <Link href={href} />
+    <Link href={href} className={inactiveStyle}>{children}</Link>
   )
 }
 
