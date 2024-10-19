@@ -1,4 +1,4 @@
-function Nav() {
+function Navbar() {
   return (
     <nav
       className="bg-secondary py-10 font-sans font-bold uppercase"
@@ -36,4 +36,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Navbar;

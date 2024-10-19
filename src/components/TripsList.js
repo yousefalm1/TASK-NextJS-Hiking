@@ -1,6 +1,7 @@
 "use client";
 
 import trips from "@/data/trips";
+import { useState } from "react";
 
 import SearchBar from "./SearchBar";
 import TripCard from "./TripCard";

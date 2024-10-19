@@ -1,12 +1,12 @@
-import Welcome from "./components/Welcome";
-import Nav from "./components/Nav";
-import TripsList from "./components/TripsList";
-import TripDetail from "./components/TripDetail";
+import Navbar from "@/components/Navbar";
+import TripDetail from "@/components/TripDetail";
+import TripsList from "@/components/TripsList";
+import Welcome from "@/components/Welcome";
 
 export default function Home() {
   return (
     <div>
-      <Nav />
+      <Navbar />
       <Welcome />
       <TripsList />
       <TripDetail />
