@@ -6,7 +6,7 @@ import { useState } from "react";
 import SearchBar from "./SearchBar";
 import TripCard from "./TripCard";
 
-function TripsList() {
+function TripList() {
   const [query, setQuery] = useState("");
   const tripCards = trips
     .filter((trip) => trip.name.toLowerCase().includes(query.toLowerCase()))
@@ -46,4 +46,4 @@ function TripsList() {
   );
 }
 
-export default TripsList;
+export default TripList;
